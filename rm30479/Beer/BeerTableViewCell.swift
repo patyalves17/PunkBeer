@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class BeerTableViewCell: UITableViewCell {
 
@@ -28,7 +29,7 @@ class BeerTableViewCell: UITableViewCell {
     func fillCell(name: String, abv: Double, image: String) {
         self.lbName.text = name
         self.lbAbv.text = "Teor alcoólico: \(abv)"
-    //    self.ivBeer.kf.setImage(with: URL(string: image))
+        self.ivBeer.kf.setImage(with: URL(string: image))
     }
 
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ViewController: UIViewController {
     @IBOutlet weak var lbName: UILabel!
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
         lbABV.text = "\(beer.abv ?? 0  )"
         lbIBU.text = "\(beer.ibu ?? 0  )"
         
-//        ivBeer.kf.setImage(with: URL(string: beer.imageURL!))
+        ivBeer.kf.setImage(with: URL(string: beer.imageURL!))
     }
     
     override func didReceiveMemoryWarning() {
