@@ -15,6 +15,7 @@
 		1E3260351FDA0A8100C8619A /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3260341FDA0A8100C8619A /* RestAPI.swift */; };
 		1E3260371FDA0AC700C8619A /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3260361FDA0AC700C8619A /* Beer.swift */; };
 		1E3260391FDA0D1B00C8619A /* BeersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3260381FDA0D1B00C8619A /* BeersTableViewController.swift */; };
+		1E32603B1FDA111700C8619A /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32603A1FDA111700C8619A /* BeerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1E3260341FDA0A8100C8619A /* RestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
 		1E3260361FDA0AC700C8619A /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		1E3260381FDA0D1B00C8619A /* BeersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersTableViewController.swift; sourceTree = "<group>"; };
+		1E32603A1FDA111700C8619A /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1E3260221FDA048400C8619A /* AppDelegate.swift */,
 				1E3260241FDA048400C8619A /* ViewController.swift */,
 				1E3260261FDA048400C8619A /* Main.storyboard */,
+				1E32603A1FDA111700C8619A /* BeerTableViewCell.swift */,
 				1E3260291FDA048400C8619A /* Assets.xcassets */,
 				1E32602B1FDA048400C8619A /* LaunchScreen.storyboard */,
 				1E32602E1FDA048400C8619A /* Info.plist */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E3260351FDA0A8100C8619A /* RestAPI.swift in Sources */,
+				1E32603B1FDA111700C8619A /* BeerTableViewCell.swift in Sources */,
 				1E3260251FDA048400C8619A /* ViewController.swift in Sources */,
 				1E3260391FDA0D1B00C8619A /* BeersTableViewController.swift in Sources */,
 				1E3260231FDA048400C8619A /* AppDelegate.swift in Sources */,
