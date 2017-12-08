@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var lbName: UILabel!
+    @IBOutlet weak var lbTagLine: UILabel!
+    @IBOutlet weak var lbDescription: UILabel!
+    @IBOutlet weak var lbABV: UILabel!
+    @IBOutlet weak var lbIBU: UILabel!
+    @IBOutlet weak var ivBeer: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
