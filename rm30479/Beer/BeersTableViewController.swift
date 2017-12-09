@@ -10,40 +10,48 @@ import UIKit
 
 class BeersTableViewController: UITableViewController {
 
-    var beerList = [Beer]()
+    var beers = [Beer]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.loadInfo()
+        self.loadBeers()
         
     }
     
-    func loadInfo() {
+    func loadBeers() {
         RestAPI.getBeers(onSuccess: { (result) in
             
-            self.beerList = result
+            self.beers = result
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
             
         }) { (error) in
-            print("Error while getting beers: \(error.localizedDescription)")
+            print("Erro ao carregar as cervejas: \(error.localizedDescription)")
+            // create the alert
+            let alert = UIAlertController(title: "Erro", message: "Erro ao carregar as cervejas.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return beerList.count
+        return beers.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "beerCell", for: indexPath) as! BeerTableViewCell
         
-        let beer = beerList[indexPath.row]
+        let beer = beers[indexPath.row]
         
-        cell.fillCell(name: beer.name!, abv: beer.abv!, image: beer.imageURL!)
+        cell.fillCell(nome: beer.nome!, teor: beer.teor!, imagem: beer.imageURL!)
         
         return cell
     }
@@ -55,7 +63,7 @@ class BeersTableViewController: UITableViewController {
     // MARK: Table view delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        performSegue(withIdentifier: "showBeer", sender: beerList[indexPath.row])
+        performSegue(withIdentifier: "showBeer", sender: beers[indexPath.row])
         
     }
     

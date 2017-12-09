@@ -62,9 +62,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="ivBeer" destination="mT1-iS-rhX" id="gVp-Ab-ERr"/>
-                                    <outlet property="lbAbv" destination="PTw-BL-s6z" id="h5e-vx-8U2"/>
-                                    <outlet property="lbName" destination="M55-Dp-YKU" id="B7m-yu-OEl"/>
+                                    <outlet property="ivImage" destination="mT1-iS-rhX" id="gVp-Ab-ERr"/>
+                                    <outlet property="lbNome" destination="M55-Dp-YKU" id="B7m-yu-OEl"/>
+                                    <outlet property="lbTeor" destination="PTw-BL-s6z" id="h5e-vx-8U2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -171,12 +171,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="ivBeer" destination="w8a-7C-vu4" id="1zk-sw-v1V"/>
-                        <outlet property="lbABV" destination="19G-8a-rLl" id="zFa-YO-luE"/>
-                        <outlet property="lbDescription" destination="jrJ-ID-oki" id="Y6y-ns-lY9"/>
-                        <outlet property="lbIBU" destination="52F-AW-2Zl" id="XUK-Y2-3SU"/>
-                        <outlet property="lbName" destination="GIo-6I-lyg" id="1o1-ut-4cS"/>
-                        <outlet property="lbTagLine" destination="pEm-dR-Z4e" id="dWq-9d-qBq"/>
+                        <outlet property="ivImagem" destination="w8a-7C-vu4" id="1zk-sw-v1V"/>
+                        <outlet property="lbAmargura" destination="52F-AW-2Zl" id="XUK-Y2-3SU"/>
+                        <outlet property="lbDescricao" destination="jrJ-ID-oki" id="Y6y-ns-lY9"/>
+                        <outlet property="lbNome" destination="GIo-6I-lyg" id="1o1-ut-4cS"/>
+                        <outlet property="lbTag" destination="pEm-dR-Z4e" id="dWq-9d-qBq"/>
+                        <outlet property="lbTeor" destination="19G-8a-rLl" id="zFa-YO-luE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -70,8 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				1EEADF1D1FDA1A0B000D38C4 /* Beer */,
-				1EEADF1E1FDA1A38000D38C4 /* Classe */,
 				1E3260221FDA048400C8619A /* AppDelegate.swift */,
+				1E3260361FDA0AC700C8619A /* Beer.swift */,
 				1E3260261FDA048400C8619A /* Main.storyboard */,
 				1E3260291FDA048400C8619A /* Assets.xcassets */,
 				1E32602B1FDA048400C8619A /* LaunchScreen.storyboard */,
@@ -89,14 +89,6 @@
 				1E32603A1FDA111700C8619A /* BeerTableViewCell.swift */,
 			);
 			path = Beer;
-			sourceTree = "<group>";
-		};
-		1EEADF1E1FDA1A38000D38C4 /* Classe */ = {
-			isa = PBXGroup;
-			children = (
-				1E3260361FDA0AC700C8619A /* Beer.swift */,
-			);
-			path = Classe;
 			sourceTree = "<group>";
 		};
 		23E5ED1BB83F4FACBA4F8A7C /* Pods */ = {

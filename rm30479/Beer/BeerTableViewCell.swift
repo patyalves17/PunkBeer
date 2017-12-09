@@ -11,9 +11,9 @@ import Kingfisher
 
 class BeerTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var ivBeer: UIImageView!
-    @IBOutlet weak var lbName: UILabel!
-    @IBOutlet weak var lbAbv: UILabel!
+    @IBOutlet weak var ivImage: UIImageView!
+    @IBOutlet weak var lbNome: UILabel!
+    @IBOutlet weak var lbTeor: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,10 +26,11 @@ class BeerTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func fillCell(name: String, abv: Double, image: String) {
-        self.lbName.text = name
-        self.lbAbv.text = "Teor alcoólico: \(abv)"
-        self.ivBeer.kf.setImage(with: URL(string: image))
+    func fillCell(nome: String, teor: Double, imagem: String) {
+        self.lbNome.text = nome
+        self.lbTeor.text = "Teor alcoólico: \(teor)"
+        self.ivImage.kf.setImage(with: URL(string: imagem))
     }
-
+  
+    
 }

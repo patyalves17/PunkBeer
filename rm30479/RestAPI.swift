@@ -41,12 +41,12 @@ class RestAPI {
                     for beerJson in json {
                         
                         let beer = Beer.init(id: beerJson["id"] as? Int ?? 0,
-                                             name: beerJson["name"] as? String ?? "",
-                                             tagline: beerJson["tagline"] as? String ?? "",
-                                             description: beerJson["description"] as? String ?? "",
-                                             abv: beerJson["abv"] as? Double ?? 0.0,
-                                             ibu: beerJson["ibu"] as? Double ?? 0.0,
-                                             imageURL: beerJson["image_url"] as? String ?? "")
+                                             nome: beerJson["name"] as? String ?? "",
+                                             tag: beerJson["tagline"] as? String ?? "",
+                                             descricao: beerJson["description"] as? String ?? "",
+                                             teor: beerJson["abv"] as? Double ?? 0.0,
+                                             amargura: beerJson["ibu"] as? Double ?? 0.0,
+                                             imagemURL: beerJson["image_url"] as? String ?? "")
                         
                         list.append(beer)
                         

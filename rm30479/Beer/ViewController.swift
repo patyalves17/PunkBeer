@@ -10,12 +10,12 @@ import UIKit
 import Kingfisher
 
 class ViewController: UIViewController {
-    @IBOutlet weak var lbName: UILabel!
-    @IBOutlet weak var lbTagLine: UILabel!
-    @IBOutlet weak var lbDescription: UILabel!
-    @IBOutlet weak var lbABV: UILabel!
-    @IBOutlet weak var lbIBU: UILabel!
-    @IBOutlet weak var ivBeer: UIImageView!
+    @IBOutlet weak var lbNome: UILabel!
+    @IBOutlet weak var lbTag: UILabel!
+    @IBOutlet weak var lbDescricao: UILabel!
+    @IBOutlet weak var lbTeor: UILabel!
+    @IBOutlet weak var lbAmargura: UILabel!
+    @IBOutlet weak var ivImagem: UIImageView!
     
      var beer: Beer?
 
@@ -26,13 +26,13 @@ class ViewController: UIViewController {
             return
         }
         
-        lbName.text = beer.name
-        lbTagLine.text = beer.tagline
-        lbDescription.text = beer.description
-        lbABV.text = "\(beer.abv ?? 0  )"
-        lbIBU.text = "\(beer.ibu ?? 0  )"
+        lbNome.text = beer.nome
+        lbTag.text = beer.tag
+        lbDescricao.text = beer.descricao
+        lbTeor.text = "\(beer.teor ?? 0  )"
+        lbAmargura.text = "\(beer.amargura ?? 0  )"
         
-        ivBeer.kf.setImage(with: URL(string: beer.imageURL!))
+        ivImagem.kf.setImage(with: URL(string: beer.imageURL!))
     }
     
     override func didReceiveMemoryWarning() {
