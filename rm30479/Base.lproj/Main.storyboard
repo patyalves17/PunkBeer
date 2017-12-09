@@ -75,7 +75,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Lista de Cervejas" id="3Oz-PA-ucj"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="showBeer" id="WVv-wo-POd"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="mostraBeer" id="WVv-wo-POd"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uct-qJ-B34" userLabel="First Responder" sceneMemberID="firstResponder"/>

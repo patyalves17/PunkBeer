@@ -63,13 +63,13 @@ class BeersTableViewController: UITableViewController {
     // MARK: Table view delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        performSegue(withIdentifier: "showBeer", sender: beers[indexPath.row])
+        performSegue(withIdentifier: "mostraBeer", sender: beers[indexPath.row])
         
     }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showBeer" {
+        if segue.identifier == "mostraBeer" {
             if let beer = sender as? Beer {
                 let beerViewController = segue.destination as! ViewController
                 beerViewController.beer = beer
