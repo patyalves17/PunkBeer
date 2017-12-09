@@ -15,11 +15,11 @@ class BeersTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.loadBeers()
+        self.carregaBeers()
         
     }
     
-    func loadBeers() {
+    func carregaBeers() {
         RestAPI.getBeers(onSuccess: { (result) in
             
             self.beers = result
@@ -51,7 +51,7 @@ class BeersTableViewController: UITableViewController {
         
         let beer = beers[indexPath.row]
         
-        cell.fillCell(nome: beer.nome!, teor: beer.teor!, imagem: beer.imageURL!)
+        cell.preenche(nome: beer.nome!, teor: beer.teor!, imagem: beer.imageURL!)
         
         return cell
     }

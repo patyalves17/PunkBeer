@@ -26,7 +26,7 @@ class BeerTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func fillCell(nome: String, teor: Double, imagem: String) {
+    func preenche(nome: String, teor: Double, imagem: String) {
         self.lbNome.text = nome
         self.lbTeor.text = "Teor alcoólico: \(teor)"
         self.ivImage.kf.setImage(with: URL(string: imagem))
